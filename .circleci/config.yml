@@ -107,7 +107,8 @@ jobs:
       - run:
           name: Build and run Dockerfile (see https://docs.railway.app/deploy/dockerfiles)
           command: |
-            cd section-08-deploying-with-containers && railway up --detach
+            #cd section-08-deploying-with-containers && railway up --detach
+            cd section-08-deploying-with-containers && railway up --detach --service "fdd28bff-eff1-4c18-a87b-2f6cac610726"
 
   test_regression_model_py37:
     docker:
